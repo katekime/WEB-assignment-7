@@ -1,7 +1,7 @@
 $(document).ready(function() {
     let $lazyImages = $('.lazy');
     const $window = $(window);
-    const buffer = 200; // Загружаем за 200px до появления
+    const buffer = 200;
 
     function lazyLoad() {
         const viewportHeight = $window.height();
@@ -18,9 +18,9 @@ $(document).ready(function() {
                     $this.attr('src', realSrc);
                     $this.addClass('loaded');
                 }
-                return false; // убираем из списка для следующей проверки
+                return false;
             }
-            return true; // оставляем для проверки позже
+            return true;
         });
 
         if ($lazyImages.length === 0) {
@@ -31,5 +31,5 @@ $(document).ready(function() {
 
     $window.on('scroll', lazyLoad);
     $window.on('resize', lazyLoad);
-    lazyLoad(); // проверка при первой загрузке страницы
+    lazyLoad();
 });
