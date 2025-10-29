@@ -7,8 +7,6 @@ $(document).ready(function() {
     function getSeriesTitles() {
         return $overlays.map(function() { return $(this).text(); }).get();
     }
-
-    // Show/hide autocomplete dropdown only when typing and not empty
     $searchBar.on('input', function() {
         var keyword = $(this).val().toLowerCase();
         $cards.each(function() {
@@ -44,12 +42,9 @@ $(document).ready(function() {
     }
 
     $(document).on('mousedown', '.autocomplete-item', function(e) {
-        // mousedown to prevent blur before click
         $searchBar.val($(this).text()).trigger('input');
         $autocompleteBox.hide();
     });
-
-    // Hide dropdown on blur, but let click finish first
     $searchBar.on('blur', function() {
         setTimeout(function() {
             $autocompleteBox.hide();
@@ -69,7 +64,5 @@ $(document).ready(function() {
             $(this).html($(this).text());
         });
     }
-
-    // Initially hide dropdown
     $autocompleteBox.hide();
 });
