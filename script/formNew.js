@@ -6,15 +6,15 @@ $(document).ready(function() {
     const $statusMessage = $('#statusMessage');
     $form.on('submit', function(e) {
         e.preventDefault(); 
-        $btnText.text('Подождите...');
+        $btnText.text('Wait...');
         $spinner.show();
         $submitBtn.prop('disabled', true);
         $statusMessage.hide();
         setTimeout(function() {
-            $btnText.text('Отправить');
+            $btnText.text('Submit');
             $spinner.hide();
             $submitBtn.prop('disabled', false);
-            $statusMessage.text('Успешно отправлено!').fadeIn();
+            $statusMessage.text('Success').fadeIn();
             $form[0].reset(); 
             
         }, 2000);
