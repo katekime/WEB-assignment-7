@@ -75,6 +75,21 @@ body {
   font-size: 16px;
 }
 
+.custom-toast {
+  position: fixed;
+  bottom: 40px;
+  right: 36px;
+  background: #3725a3;
+  color: #fff;
+  font-size: 1.1em;
+  padding: 13px 24px;
+  border-radius: 13px;
+  box-shadow: 0 2px 24px #0005;
+  z-index: 9999;
+  opacity: 0.98;
+  letter-spacing: 0.5px;
+}
+
 #date-time-block {
   margin-top: 34px;
   padding: 10px 26px;

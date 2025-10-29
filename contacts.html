@@ -11,6 +11,8 @@
     <script src="./script/translator.js" defer></script>
     <script src="./script/navigation.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./script/notification.js"></script>
+    <script src="./script/copyFooter.js"></script>
 </head>
 <body>
     <header id="top-banner" class="header-section">
@@ -70,7 +72,7 @@
     <div class="popup-content">
       <span id="close-popup-btn" class="close-btn">&times;</span>
       <h2>Subscribe to our Newsletter</h2>
-      <form>
+      <form id="subscribeForm">
         <input type="email" placeholder="Your Email Address" required>
         <button type="submit" class="dark-btn">Subscribe</button>
       </form>
@@ -85,8 +87,14 @@
   <script src="./script/tasks.js"></script>
 
   <footer>
-  <p>Team name: Oralbasar</p>
-  <p>Members: Zhetpysbaev Adilbek, Ulan Orazbek</p>
+  <p id="footerTeam">Team name: Oralbasar</p>
+  <p id="footerMembers">Members: Zhetpysbaev Adilbek, Ulan Orazbek</p>
+  <div class="footer-copy-row">
+  <button id="copyFooterBtn" class="dark-btn" style="padding:8px 18px;font-size:16px;vertical-align:middle;margin:0;display:inline-block;">
+    <span class="copy-icon" style="margin-right:7px;">📋</span> Copy
+  </button>
+  <span id="copyTooltip" style="display:none; color:#ffe; font-weight:500; margin-left:10px;vertical-align:middle;transition:opacity 0.12s;">Copied to clipboard!</span>
+  </div>
   </footer>
 </body>
 </html>

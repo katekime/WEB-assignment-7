@@ -10,6 +10,7 @@
 <script src="./script/translator.js" defer></script>
     <script src="./script/navigation.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./script/seriesSearch.js"></script>
 </head>
 <body>
 
@@ -66,56 +67,61 @@
 <main>
   <h1 class="page-title">Series</h1>
 
+  <div class="search-bar-wrapper" style="margin-bottom: 2em;">
+  <input id="searchBar" type="text" placeholder="Search series..." autocomplete="off">
+  <div id="autocomplete-list" class="autocomplete-items"></div>
+  </div>  
+
   <section class="series-grid">
     <div class="card">
       <img src="images/image1401.jpg" alt="Series 1" />
       <button class="add-btn">+</button>
-      <div class="overlay">Movie 1</div>
+      <div class="overlay">Peaky Blinders</div>
     </div>
     <div class="card">
       <img src="images/walter.jpg" alt="Series 2" />
       <button class="add-btn">+</button>
-      <div class="overlay">Movie 2</div>
+      <div class="overlay">Breaking Bad</div>
     </div>
     <div class="card">
       <img src="images/image142.jpg" alt="Series 3" />
       <button class="add-btn">+</button>
-      <div class="overlay">Movie 3</div>
+      <div class="overlay">Game Of Thrones</div>
     </div>
     <div class="card">
       <img src="images/white.jpg" alt="Series 4" />
       <button class="add-btn">+</button>
-      <div class="overlay">Movie 4</div>
+      <div class="overlay">Moon Knight</div>
     </div>
     <div class="card">
       <img src="images/ambal.jpg" alt="Series 5" />
       <button class="add-btn">+</button>
-      <div class="overlay">Movie 5</div>
+      <div class="overlay">Jack Reacher</div>
     </div>
     <div class="card">
       <img src="images/ambal.jpg" alt="Series 5" />
       <button class="add-btn">+</button>
-      <div class="overlay">Movie 6</div>
+      <div class="overlay">Some movie...</div>
     </div>
     <div class="card">
       <img src="images/ambal.jpg" alt="Series 5" />
       <button class="add-btn">+</button>
-      <div class="overlay">Movie 7</div>
+      <div class="overlay">Some movie...</div>
     </div>
     <div class="card">
       <img src="images/ambal.jpg" alt="Series 5" />
       <button class="add-btn">+</button>
-      <div class="overlay">Movie 8</div>
+      <div class="overlay">Some movie...</div>
     </div>
     <div class="card">
       <img src="images/ambal.jpg" alt="Series 5" />
       <button class="add-btn">+</button>
-      <div class="overlay">Movie 9</div>
+      <div class="overlay">Some movie...</div>
     </div>
     <div class="card">
       <img src="images/ambal.jpg" alt="Series 5" />
       <button class="add-btn">+</button>
-      <div class="overlay">Movie 10</div>
+      <div class="overlay">Some movie...  </div>
     </div>
   </section>
 </main>

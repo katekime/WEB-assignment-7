@@ -87,6 +87,82 @@ ul {
   max-width: 1260px;
   padding: 0 20px;
 }
+.search-bar-wrapper {
+  margin-left: 130px;
+  margin-top: 8px;
+  max-width: 300px;
+  position: relative;
+}
+
+#searchBar {
+  width: 200px;
+  padding: 0.45em;
+  border-radius: 0.3em;
+  font-size: 16px;
+}
+
+.overlay {
+  font-size: 1.15em;
+  font-weight: 500;
+  max-width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.highlight {
+  background: #ffc107;
+  color: #222;
+  border-radius: 0.2em;
+  padding: 0 2px;
+}
+
+.series-grid .card {
+  width: 180px;
+  margin: 16px;
+}
+
+/* Stylish Autocomplete Dropdown */
+.autocomplete-items {
+  position: absolute;
+  left: 0; right: 0;
+  margin-top: 4px;
+  background: #20154d;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px 0 #0005, 0 2px 4px #523ae2;
+  border: 1px solid #3d368a;
+  z-index: 10;
+  padding: 8px 0;
+  color: #fff;
+  font-family: inherit;
+  /* min-width: 200px; */
+  max-width: 215px;
+}
+
+.autocomplete-item {
+  display: block;
+  /* width: 100%; */
+  padding: 10px 20px;
+  cursor: pointer;
+  background: transparent;
+  font-size: 1.08em;
+  border: none;
+  outline: none;
+  transition: background .17s, color .17s;
+  border-radius: 6px;
+}
+
+.autocomplete-item:hover,
+.autocomplete-item:active {
+  background: linear-gradient(90deg, #ff00cc55 0%, #33339988 60%);
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 1px 8px 0 #2226;
+}
+
+
 .movie-grid,
 .series-grid {
   display: grid;
