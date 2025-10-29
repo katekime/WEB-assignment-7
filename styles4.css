@@ -1,0 +1,91 @@
+.registration__form {
+      background-color: rgb(66, 0, 151);
+      padding: 20px;
+      border-radius: 10px;
+      width: 500px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form__button {
+      margin-top: 15px;
+      width: 100%;
+      padding: 10px;
+      background-color: rgb(111, 0, 255);
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .form__button:hover {
+      background-color: #0056b3;
+    }
+
+    .error {
+      color: rgb(255, 0, 0);
+      font-size: 13px;
+      padding-top: 15px;
+      display: none;
+    }
+
+    .movie__form {
+      margin-block: 50px;
+    }
+    .accordion {
+      width: 500px;
+      margin-inline: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .accordion-item {
+      border-bottom: 1px solid #000000;
+      display: grid;
+      row-gap: 5px;
+    }
+
+    .accordion-section {
+        margin-block: 50px;
+    }
+    .accordion-header {
+      padding: 15px 20px;
+      background-color: #007bff;
+      color: rgb(255, 255, 255);
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .accordion-header:hover {
+      background-color: #0056b3;
+    }
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      background-color: #372664;
+      padding: 0 20px;
+      transition: all 0.4s ease;
+      color: rgb(255, 255, 255);
+    }
+
+    .accordion-content.open {
+      padding: 15px 20px;
+      max-height: 200px;
+    }
