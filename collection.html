@@ -10,6 +10,9 @@
     <script src="./script/animations.js" defer></script>
     <script src="./script/translator.js" defer></script>
     <script src="./script/navigation.js" defer></script>
+    <script src="./script/animate.js" defer></script>
+    <script src="./script/formNew.js" defer></script>
+    <script src="./script/LazyImages.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
@@ -103,6 +106,57 @@
         </li>
     </ul>
   </section>
+  <section class="stats">
+    <div class="stats-section">
+        <h2>Our advantages</h2>
+        
+        <div class="stat-container">
+            <div class="stat-item">
+                <span class="count-number" data-target="1250">0</span>
+                <span class="unit">+</span>
+                <p class="description">Clients</p>
+            </div>
+
+            <div class="stat-item">
+                <span class="count-number" data-target="380">0</span>
+                <span class="unit">K</span>
+                <p class="description">Viewed Films</p>
+            </div>
+
+            <div class="stat-item">
+                <span class="count-number" data-target="49">0</span>
+                <span class="unit">%</span>
+                <p class="description">Increase up</p>
+            </div>
+        </div>
+    </div>
+  </section>
+  <section class="form-add">
+    <div class="form-container">
+        <div class="form-container__inner">
+        <h1 class="form__title">Form</h1>
+        <form id="myForm">
+            <input type="text" placeholder="Your name" required>
+            <input type="email" placeholder="Email" required>
+            
+            <button type="submit" id="submitBtn" class="submit-btn">
+                <span class="btn-text">Submit</span>
+                <span class="spinner" style="display: none;"></span> 
+            </button>
+        </form>
+        <p id="statusMessage" style="margin-top: 20px; color: #007bff; display: none;"></p>
+    </div>
+    </div>
+  </section>
+  <div class="lazy-images">
+    <div style="height: 300px;"></div>
+    <img class="lazy" src="" data-src="https://images.gem.cbc.ca/v1/synps-cbc/episode/perso/cbc_brother_ott_square_v01.jpg?impolicy=ott&im=Resize=730&quality=75" alt="Image 1">
+    <div style="height: 1000px;"></div>
+    <img class="lazy" src="" data-src="https://lumiere-a.akamaihd.net/v1/images/image_9e35a739.jpeg?region=0%2C0%2C540%2C810&width=320" alt="Image 2">
+    <div style="height: 300px;"></div>
+    <img class="lazy" src="" data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaqCwNzNfWJzytrxuuW3K9u9xUBJ4Hu5vUPQ&s" alt="Image 3">
+    <div style="height: 300px;"></div>
+  </div>
   <footer>
   <p>Team name: Oralbasar</p>
   <p>Members: Zhetpysbaev Adilbek, Ulan Orazbek</p>
